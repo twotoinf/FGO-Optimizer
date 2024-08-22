@@ -31,7 +31,9 @@ def generate_vecs_my(my_cards_limit_full:np.ndarray, my_cards_limit_un:np.ndarra
             if j > my_cards_num_limit[1]:
                 break
             k = POS_LIMIT_OWN - i - j
-            if k > my_cards_num_limit[2] or k < 0:
+            if k > my_cards_num_limit[2]:
+                continue
+            if k < 0:
                 break
             space = np.array([i ,j, k])
             set_idx = (space <= my_cards_limit_full)
