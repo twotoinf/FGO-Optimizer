@@ -7,8 +7,6 @@
 my_cards_limit_full, my_cards_limit_un = [1, 2, 2], [2, 4, 5]
 # 助战：是否能借到加成礼装，是否能借到满破加成礼装（1/0）
 support_available, full_support_available = [1, 1, 1], [1, 1, 1]
-# （可选）自身加成数（不包含好友助战，0-5之内整数，默认5）
-POS_LIMIT_OWN = 5
 # 过本基础获取
 a = [[0,    7.18,   45],
      [7.31,   45,    0],
@@ -25,16 +23,14 @@ b = [[   0, 2.39,   15],
 level_name = ["80","85","90","90+","90++"]
 # a的行数，b的行数，level_name的长度相同
 # 材料需求，已有材料
-all_demond = [1800, 2300, 3400]
-now_own = [484, 535, 551]
-# （可选）偏好加成配置（在过本次数最优的条件下，偏好某一种加成配置。指定三种材料的额外加成数）
-gain_bias = [4, 4, 4]
+all_demond = [2100, 2700, 3720]
+now_own = [72, 242, 213]
 
 
 # 参考输出
 
 # Success
-# Minimum number of times: 26.0
+# Minimum number of times: 35.0
 
 # Summary:
 # level 80	 a=[ 0.    7.18 45.  ]	 b=[ 0.    2.39 15.  ]
@@ -46,6 +42,6 @@ gain_bias = [4, 4, 4]
 # level 90+	 a=[27.7 27.7 27.6]	 b=[9.23 9.24 9.22]
 
 # level 90++	 a=[33.3 33.2 33.2]	 b=[11.1 11.  11. ]
-# nums: 5.0	 gain: [0 4 8]	 num_card: [0 2 4]
-# nums: 15.0	 gain: [2 2 8]	 num_card: [1 1 4]
-# nums: 6.0	 gain: [2 6 4]	 num_card: [1 3 2]
+# nums: 6.0	 gain: [4 2 6]	 num_card: [2 1 3]
+# nums: 16.0	 gain: [2 2 8]	 num_card: [1 1 4]
+# nums: 13.0	 gain: [2 6 4]	 num_card: [1 3 2]
